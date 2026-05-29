@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
 
 :root {
-  --cor-de-fundo: #000000c9;
-  --verde: #ffffff;
-  --branco: #ffffff;
-  --botao-ativo: #034403;
-  --botao-inativo: rgba(16, 151, 11, 0.753);
-  --texto-fundo: rgba(13, 92, 6, 0.315);
+--cor-de-fundo: #000000c9;
+--verde: #11bd1ac2;
+--branco: #ffffff;
+--botao-ativo: #034403b4;
+--botao-inativo: rgba(68, 146, 66, 0.555);
+ --texto-fundo: rgba(14, 105, 5, 0.178);
 }
 
 body {
@@ -63,16 +63,12 @@ body {
   .botoes {
     display: flex;
   }
-.botao:last-child {
-    border-radius: 0 40px 0 0;
-  }
-.botao:first-child {
+   .botao:first-child {
     border-radius: 40px 0 0 0;
   }
-}
-.ativo {
-  background-color: var(--botao-ativo);
-  border-bottom: 4px solid var(--verde);
+  .botao:last-child {
+    border-radius: 0 40px 0 0;
+  }
 }
 .abas-textos {
   background-color: var(--texto-fundo);
@@ -86,6 +82,9 @@ body {
   background-color: var(--botao-ativo);
   border-bottom: 4px solid var(--verde);
 }
+.aba-conteudo.ativo {
+  display: block;
+}
 .aba-conteudo-titulo-principal {
   font-size: 28px;
   text-align: center;
@@ -94,4 +93,7 @@ body {
   text-align: center;
   color: var(--verde);
   text-transform: uppercase;
+}
+.aba-conteudo {
+  display: none;
 }
